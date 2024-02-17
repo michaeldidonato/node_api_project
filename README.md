@@ -2,6 +2,11 @@
 
 This node.js app allows you to get, create, update and delete products, users and orders.
 
+You can perform CRUD operation with the following endpoints: /products, /users, /orders.
+You can add a params :id to get, create and update a single item.
+
+Also you can filter orders based on the date using "date" variable querystring with the format "YYYY-MM-DD"
+
 ## Built with
 
 * Node.js
