@@ -13,8 +13,6 @@ const getUserById = async (req, res, next) => {
   
     res.user = user;
   
-    console.log(user);
-  
     next();
   };
 

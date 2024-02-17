@@ -12,8 +12,6 @@ const getProductById = async (req, res, next) => {
       }
     
       res.product = product;
-    
-      console.log(product);
 
     next();
 };
