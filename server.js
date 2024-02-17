@@ -29,9 +29,9 @@ app.use("/products", productsRouter);
 app.use("/orders", ordersRouter);
 
 //comment code from line 32 to 34 to test
-// app.listen(3000, () => {
-//   console.log("Server started");
-// });
+app.listen(3000, () => {
+  console.log("Server started");
+});
 
 module.exports = app
 
