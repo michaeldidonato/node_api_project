@@ -5,10 +5,14 @@ const getOrderById = require("../middlewares/orders");
 
 //GET
 router.get("/", async (req, res) => {
-  const { date } = req.query;
+  const { date, productName } = req.query;
 
   try {
     let orders;
+
+    if (productName) {
+      orders = await Order.find({ names: { $all: [productName] } });
+    }
 
     if (date) {
       const splitDate = date.split("-");
@@ -39,7 +43,9 @@ router.get("/", async (req, res) => {
           $lte: endDate.toISOString(),
         },
       });
-    } else {
+    }
+
+    if (!date && !productName) {
       orders = await Order.find();
     }
 
