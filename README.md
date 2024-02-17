@@ -22,9 +22,11 @@ git clone https://github.com/michaeldidonato/node_api_project.git
 
    ### `npm i`
 
-   Create a file .env to set DATABASE_URL=mongodb+srv://{user}:{password}@vegapp.vald4sq.mongodb.net/?retryWrites=true&w=majority
-
-   ## Available Scripts
+   Create a file .env to set 
+   ```sh 
+   DATABASE_URL=mongodb+srv://{user}:{password}@vegapp.vald4sq.mongodb.net/?retryWrites=true&w=majority
+```
+ ## Available Scripts
 
   ### `npm start`
 
@@ -33,8 +35,7 @@ git clone https://github.com/michaeldidonato/node_api_project.git
 
 ### `npm test`
 
-    
-    To run UNIT TEST in this app set in __test__ files ids referred for each the entity and comment code in server.js file from line 32 to 34
+   To test this app set in __test__ files ids referred for each the entity and comment code in server.js file from line 32 to 34
 
 
 
