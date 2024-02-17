@@ -35,7 +35,7 @@ git clone https://github.com/michaeldidonato/node_api_project.git
 
 ### `npm test`
 
-   To test this app set in __test__ files ids referred for each the entity and comment code in server.js file from line 32 to 34
+   To test this app set in __test__ file ids referred for each entity and comment code in server.js file from line 32 to 34
 
 
 
